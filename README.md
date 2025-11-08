@@ -4,7 +4,7 @@ This is a simple web page inspired by **Visual Studio Code**.
 Built using **HTML, CSS, and JavaScript** for learning purposes.
 
 ## 🔗 Live Website
-[Click here to view](https://<ankushkaundal2007-hub>.github.io/<your-repo-name>/)
+[Click here to view](](https://ankushkaundal2007-hub.github.io/clone_web/))
 
 ## 📄 Description
 - Open-source AI Code Editor design  
