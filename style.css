@@ -1,0 +1,212 @@
+/* 🌐 General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* 🌌 Body Theme */
+body {
+    background-color: #0f171e; /* dark bluish black */
+    color: white;
+}
+
+/* 🧭 Header */
+header {
+    background: linear-gradient(145deg, #141c26, #0b1219);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    /* 3D glowing effect */
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05),
+                0 4px 20px rgba(0, 255, 255, 0.15);
+    border-radius: 8px;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header p {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header p:hover {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+    transform: translateY(-2px);
+}
+
+/* 🔍 Search */
+#search {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #0b1219;
+    color: white;
+    box-shadow: 0 0 5px #00ffff;
+}
+
+/* ⬇️ Download Button */
+.download-btn {
+    background: linear-gradient(145deg, #00ffff, #007f7f);
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffff;
+}
+.download-link1 {
+    text-decoration: none;
+    color: lab(92.7% 0 -0.01);
+}
+
+.download-link:hover {
+    color: #007f7f;
+}
+
+
+
+/* 💡 Hero Section (Center Area) */
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* White box for "THE OPEN SOURCE / AI CODE EDITOR" */
+.hero-box {
+    background-color: rgb(177, 173, 173);
+    color: black;
+    display: inline-block;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Inside text styling */
+.hero-box pre {
+    font-size: 2rem;
+    color: black;
+    text-shadow: none;
+    letter-spacing: 2px;
+}
+
+/* (Remove duplicate .hero pre) — Not needed anymore
+.hero pre {
+    font-size: 2rem;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff;
+    letter-spacing: 2px;
+}
+*/
+
+/* 🪟 Download Box */
+.download{
+ text-align: center;
+}
+.download-box {
+      text-align: center;
+    background-color: rgb(177, 173, 173);
+    color: black;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    font-weight: bold;
+}
+
+.platforms, .license {
+    margin-top: 10px;
+    color: #bdccde;
+    text-align: center;
+    
+}
+.download-link {
+    text-decoration: none;
+    color: black;
+}
+
+.download-link:hover {
+    color: #007f7f;
+}
+
+
+
+/* 🖼️ Images Section */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.images img {
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #00ffff;
+}
+/* 🌙 Footer Section */
+footer {
+    background-color: #1a242f; /* same tone as header */
+    color: #b0c4de;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Links styling */
+.footer-links a {
+    color: #b0c4de;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+/* Make footer responsive */
+@media (max-width: 600px) {
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
